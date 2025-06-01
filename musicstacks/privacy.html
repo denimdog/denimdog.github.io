@@ -138,6 +138,84 @@
             margin-top: 2rem;
             font-size: 0.9rem;
         }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .privacy-section .container {
+                padding: 0 1rem;
+            }
+            
+            .privacy-section table {
+                table-layout: auto;
+                border: none;
+                box-shadow: none;
+                border-radius: 0;
+                background: transparent;
+                margin: 1rem 0;
+            }
+            
+            .privacy-section thead {
+                display: none;
+            }
+            
+            .privacy-section tbody,
+            .privacy-section tr {
+                display: block;
+            }
+            
+            .privacy-section tbody {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .privacy-section tr {
+                border: none;
+                margin-bottom: 2rem;
+                margin-top: 0;
+                padding: 0;
+                background: transparent;
+                border-bottom: 1px solid rgba(108, 117, 125, 0.2);
+                padding-bottom: 1.5rem;
+            }
+            
+            .privacy-section tr:first-child {
+                margin-top: 0;
+                padding-top: 0;
+            }
+            
+            .privacy-section tr:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            
+            .privacy-section td {
+                display: block;
+                text-align: left;
+                border: none;
+                padding: 0.25rem 0;
+                margin: 0;
+                white-space: normal;
+                position: relative;
+                padding-left: 0;
+            }
+            
+            .privacy-section td:before {
+                content: attr(data-label);
+                display: block;
+                font-weight: 600;
+                color: var(--text-color);
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+
+        /* Very small screens */
+        @media (max-width: 480px) {
+            .privacy-section .container {
+                padding: 0 0.75rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -175,14 +253,14 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>App runtime</strong></td>
-                            <td>None — Music Stacks runs entirely on-device. No user-identifiable data is transmitted to Denim Dog LLC or any other third party.</td>
-                            <td>Your device</td>
+                            <td data-label="Source"><strong>App runtime</strong></td>
+                            <td data-label="Type of data">None — Music Stacks runs entirely on-device. No user-identifiable data is transmitted to Denim Dog LLC or any other third party.</td>
+                            <td data-label="Where it stays">Your device</td>
                         </tr>
                         <tr>
-                            <td><strong>Apple diagnostic services</strong></td>
-                            <td>Optional crash logs and anonymous usage stats that iOS may send to Apple if you enable <strong>"Share with App Developers."</strong></td>
-                            <td>Apple servers</td>
+                            <td data-label="Source"><strong>Apple diagnostic services</strong></td>
+                            <td data-label="Type of data">Optional crash logs and anonymous usage stats that iOS may send to Apple if you enable <strong>"Share with App Developers."</strong></td>
+                            <td data-label="Where it stays">Apple servers</td>
                         </tr>
                     </tbody>
                 </table>
