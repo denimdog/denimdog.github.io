@@ -8,318 +8,113 @@
     <link rel="icon" type="image/png" href="app-icon.png">
     <link rel="apple-touch-icon" href="app-icon.png">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .privacy-section {
-            padding: 3rem 0;
-        }
-        
-        .privacy-section .container {
-            max-width: 800px;
-            line-height: 1.6;
-        }
-        
-        .privacy-section h1 {
-            color: var(--text-color);
-            margin-bottom: 0.5rem;
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-        
-        .privacy-section h3 {
-            color: var(--text-color);
-            margin-top: 2rem;
-            margin-bottom: 0.75rem;
-            font-size: 1.25rem;
-            font-weight: 600;
-        }
-        
-        .privacy-section p {
-            margin-bottom: 1rem;
-            color: var(--text-secondary);
-        }
-        
-        .privacy-section table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            box-shadow: 0 4px 20px var(--shadow-color);
-            border-radius: 12px;
-            overflow: hidden;
-            background: var(--card-background);
-            table-layout: fixed;
-        }
-        
-        .privacy-section th,
-        .privacy-section td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid rgba(108, 117, 125, 0.2);
-            vertical-align: top;
-        }
-        
-        .privacy-section th {
-            background-color: var(--features-background);
-            font-weight: 600;
-            color: var(--text-color);
-            white-space: nowrap;
-        }
-        
-        .privacy-section th:nth-child(1) {
-            width: 20%;
-        }
-        
-        .privacy-section th:nth-child(2) {
-            width: 60%;
-        }
-        
-        .privacy-section th:nth-child(3) {
-            width: 20%;
-        }
-        
-        .privacy-section td {
-            color: var(--text-secondary);
-        }
-        
-        .privacy-section blockquote {
-            background-color: var(--features-background);
-            border-left: 4px solid var(--accent-color);
-            padding: 1rem 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .privacy-section blockquote p {
-            margin: 0;
-            font-weight: 600;
-            color: var(--text-color);
-        }
-        
-        .privacy-section ul,
-        .privacy-section ol {
-            margin: 1rem 0;
-            padding-left: 1.5rem;
-        }
-        
-        .privacy-section li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-        
-        .privacy-section a {
-            color: var(--secondary-accent);
-            text-decoration: none;
-        }
-        
-        .privacy-section a:hover {
-            text-decoration: underline;
-        }
-        
-        .back-link {
-            display: inline-block;
-            margin-bottom: 2rem;
-            color: var(--secondary-accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        
-        .effective-date {
-            color: var(--text-secondary);
-            font-style: italic;
-            margin-bottom: 2rem;
-        }
-        
-        .disclaimer {
-            font-style: italic;
-            color: var(--text-secondary);
-            margin-top: 2rem;
-            font-size: 0.9rem;
-        }
-
-        /* Mobile responsive styles */
-        @media (max-width: 768px) {
-            .privacy-section .container {
-                padding: 0 1rem;
-            }
-            
-            .privacy-section table {
-                table-layout: auto;
-                border: none;
-                box-shadow: none;
-                border-radius: 0;
-                background: transparent;
-                margin: 1rem 0;
-            }
-            
-            .privacy-section thead {
-                display: none;
-            }
-            
-            .privacy-section tbody,
-            .privacy-section tr {
-                display: block;
-            }
-            
-            .privacy-section tbody {
-                margin: 0;
-                padding: 0;
-            }
-            
-            .privacy-section tr {
-                border: none;
-                margin-bottom: 2rem;
-                margin-top: 0;
-                padding: 0;
-                background: transparent;
-                border-bottom: 1px solid rgba(108, 117, 125, 0.2);
-                padding-bottom: 1.5rem;
-            }
-            
-            .privacy-section tr:first-child {
-                margin-top: 0;
-                padding-top: 0;
-            }
-            
-            .privacy-section tr:last-child {
-                border-bottom: none;
-                margin-bottom: 0;
-                padding-bottom: 0;
-            }
-            
-            .privacy-section td {
-                display: block;
-                text-align: left;
-                border: none;
-                padding: 0.25rem 0;
-                margin: 0;
-                white-space: normal;
-                position: relative;
-                padding-left: 0;
-            }
-            
-            .privacy-section td:before {
-                content: attr(data-label);
-                display: block;
-                font-weight: 600;
-                color: var(--text-color);
-                margin-bottom: 0.5rem;
-                font-size: 1rem;
-            }
-        }
-
-        /* Very small screens */
-        @media (max-width: 480px) {
-            .privacy-section .container {
-                padding: 0 0.75rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <main>
-        <section class="privacy-section">
+        <article class="legal-page">
             <div class="container">
-                <a href="index.html" class="back-link">← Back to Music Stacks</a>
+                <nav>
+                    <a href="index.html" class="back-link">← Back to Music Stacks</a>
+                </nav>
                 
-                <h1>Privacy Policy</h1>
-                <p class="effective-date"><strong>Effective date:</strong> 31 May 2025</p>
+                <header>
+                    <h1>Privacy Policy</h1>
+                    <time class="effective-date" datetime="2025-05-31">Effective date: 31 May 2025</time>
+                </header>
 
-                <h3>1. Who we are</h3>
-                <p>Music Stacks is published by <strong>Denim Dog LLC</strong>, a Kansas limited liability company.</p>
+                <section>
+                    <h3>1. Who we are</h3>
+                    <p>Music Stacks is published by <strong>Denim Dog LLC</strong>, a Kansas limited liability company.</p>
 
-                <hr>
+                    <hr>
 
-                <h3>2. How Music Stacks works with Apple Music</h3>
-                <p>Music Stacks is an <strong>Apple Music client</strong> that runs entirely on your device.</p>
-                <ul>
-                    <li>All library reads and writes happen on your device and are sent directly to Apple's servers through the official <strong>MusicKit</strong> framework over encrypted HTTPS.</li>
-                    <li>Your Apple Music library data (songs, playlists, listening history) is processed by Music Stacks on your device.</li>
-                    <li>Denim Dog LLC does not operate servers that handle your music data.</li>
-                </ul>
+                    <h3>2. How Music Stacks works with Apple Music</h3>
+                    <p>Music Stacks is an <strong>Apple Music client</strong> that runs entirely on your device.</p>
+                    <ul>
+                        <li>All library reads and writes happen on your device and are sent directly to Apple's servers through the official <strong>MusicKit</strong> framework over encrypted HTTPS.</li>
+                        <li>Your Apple Music library data (songs, playlists, listening history) is processed by Music Stacks on your device.</li>
+                        <li>Denim Dog LLC does not operate servers that handle your music data.</li>
+                    </ul>
 
-                <hr>
+                    <hr>
 
-                <h3>3. What data we (don't) collect</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Source</th>
-                            <th>Type of data</th>
-                            <th>Where it stays</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Source"><strong>App runtime</strong></td>
-                            <td data-label="Type of data">None — Music Stacks runs entirely on-device. No user-identifiable data is transmitted to Denim Dog LLC or any other third party.</td>
-                            <td data-label="Where it stays">Your device</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Source"><strong>Apple diagnostic services</strong></td>
-                            <td data-label="Type of data">Optional crash logs and anonymous usage stats that iOS may send to Apple if you enable <strong>"Share with App Developers."</strong></td>
-                            <td data-label="Where it stays">Apple servers</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <h3>3. What data we (don't) collect</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Source</th>
+                                <th>Type of data</th>
+                                <th>Where it stays</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Source"><strong>App runtime</strong></td>
+                                <td data-label="Type of data">None — Music Stacks runs entirely on-device. No user-identifiable data is transmitted to Denim Dog LLC or any other third party.</td>
+                                <td data-label="Where it stays">Your device</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Source"><strong>Apple diagnostic services</strong></td>
+                                <td data-label="Type of data">Optional crash logs and anonymous usage stats that iOS may send to Apple if you enable <strong>"Share with App Developers."</strong></td>
+                                <td data-label="Where it stays">Apple servers</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                <blockquote>
-                    <p><strong>We do not collect your music library data or embed any third-party analytics, advertising SDKs, or remote-config services.</strong></p>
-                </blockquote>
+                    <blockquote>
+                        <p><strong>We do not collect your music library data or embed any third-party analytics, advertising SDKs, or remote-config services.</strong></p>
+                    </blockquote>
 
-                <hr>
+                    <hr>
 
-                <h3>4. How we use information</h3>
-                <ul>
-                    <li>Diagnostics supplied by Apple help us identify crashes and performance issues.</li>
-                    <li>Denim Dog LLC does not store, sell, or share personal data.</li>
-                </ul>
+                    <h3>4. How we use information</h3>
+                    <ul>
+                        <li>Diagnostics supplied by Apple help us identify crashes and performance issues.</li>
+                        <li>Denim Dog LLC does not store, sell, or share personal data.</li>
+                    </ul>
 
-                <hr>
+                    <hr>
 
-                <h3>5. User-initiated data export</h3>
-                <p>Music Stacks lets you <strong>export</strong> your stacks so you can back them up or share them.</p>
-                <ul>
-                    <li>Export files are created locally on your device.</li>
-                    <li>You decide if, when, and how to share them (e.g., AirDrop, Mail).</li>
-                    <li>Denim Dog LLC never receives a copy unless you send it to us directly.</li>
-                </ul>
+                    <h3>5. User-initiated data export</h3>
+                    <p>Music Stacks lets you <strong>export</strong> your stacks so you can back them up or share them.</p>
+                    <ul>
+                        <li>Export files are created locally on your device.</li>
+                        <li>You decide if, when, and how to share them (e.g., AirDrop, Mail).</li>
+                        <li>Denim Dog LLC never receives a copy unless you send it to us directly.</li>
+                    </ul>
 
-                <hr>
+                    <hr>
 
-                <h3>6. Data retention & deletion</h3>
-                <ul>
-                    <li>Because we don't collect data, there is nothing for us to retain or delete on our servers.</li>
-                    <li>Delete Music Stacks to erase all app data from your device.</li>
-                </ul>
+                    <h3>6. Data retention & deletion</h3>
+                    <ul>
+                        <li>Because we don't collect data, there is nothing for us to retain or delete on our servers.</li>
+                        <li>Delete Music Stacks to erase all app data from your device.</li>
+                    </ul>
 
-                <hr>
+                    <hr>
 
-                <h3>7. Children's privacy</h3>
-                <p>Music Stacks is not directed to children under 13, and we do not knowingly collect personal data from them.</p>
+                    <h3>7. Children's privacy</h3>
+                    <p>Music Stacks is not directed to children under 13, and we do not knowingly collect personal data from them.</p>
 
-                <hr>
+                    <hr>
 
-                <h3>8. Changes to this policy</h3>
-                <p>We may update this policy from time to time. When we do, we will change the <strong>"Effective date"</strong> above and post the revised policy at this URL.</p>
-                <p>We will announce any material changes to our data practices on our website and in app release notes.</p>
+                    <h3>8. Changes to this policy</h3>
+                    <p>We may update this policy from time to time. When we do, we will change the <strong>"Effective date"</strong> above and post the revised policy at this URL.</p>
+                    <p>We will announce any material changes to our data practices on our website and in app release notes.</p>
 
-                <hr>
+                    <hr>
 
-                <h3>9. Contact</h3>
-                <p><strong>Denim Dog LLC</strong><br>
-                <a href="mailto:support@denim.dog">support@denim.dog</a></p>
-
-                <p class="disclaimer"><em>Apple, Apple Music, and MusicKit are trademarks of Apple Inc.</em></p>
+                    <h3>9. Contact</h3>
+                    <p><strong>Denim Dog LLC</strong><br>
+                    <a href="mailto:support@denim.dog">support@denim.dog</a></p>
+                </section>
             </div>
-        </section>
+        </article>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Denim Dog LLC. All rights reserved.</p>
+            <p>&copy; 2025 Denim Dog LLC</p>
         </div>
     </footer>
 </body>
