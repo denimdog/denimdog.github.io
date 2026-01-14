@@ -21,8 +21,7 @@ No local build or server required - open HTML files directly in a browser for pr
 ## Content Structure
 
 - **Root level**: Company landing page (`index.html`)
-- **`/musicstacks/`**: App-specific pages including showcase, privacy policy, and terms of use
-- **`musicstacks/styles.css`**: Shared styles for all Music Stacks pages
+- App pages have been migrated to dedicated domains (e.g., Music Stacks → musicstacks.app)
 
 ## Key Patterns
 
